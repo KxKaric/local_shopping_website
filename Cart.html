@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <link rel="stylesheet" href="css/Cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <title>Shopping Cart</title>
+</head>
+
+<body onload="showCart()">
+  <h1>Shopping Cart</h1>
+
+  <div class="NavBar">
+    <div class="NavBarItems">
+      <a class="homepage" href="Home.html">Home</a>
+      <a class="Products" href="Products.html">Products</a>
+      <a class="About" href="About.html">About</a>
+    </div>
+
+    <div class="sideicons">
+       <a class="cartImage" href="Cart.html">
+          <i class="fa fa-cart-shopping"></i>
+       </a>
+       <a class="profile" href="profile.html">
+          <i class="fa-solid fa-user"></i>
+       </a>
+       <input type="text" name="searchBar" placeholder="Search..">
+    </div>
+
+
+ </div>
+  <div class="cart_container">
+    <table id="cart_table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <tr>
+          <td>
+            <img src="images/40s.png" alt="Item 1">
+            <p>40s & Shorties Logo Sand T-Shirt</p>
+          </td>
+          <td>
+            <span>1</span>
+          </td>
+          <td>$20</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/LZMFG.png" alt="Item 2">
+            <p>LZMFG Midnight Black T-Shirt</p>
+          </td>
+          <td>
+            <span>2</span>
+          </td>
+          <td>$60</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/santa.png" alt="Item 3">
+            <p>Santa Cruz Reflection Black T-Shirt</p>
+          </td>
+          <td>
+            <span>3</span>
+          </td>
+          <td>$75</td>
+        </tr> -->
+      </tbody>
+    </table>
+
+  </div>
+  <div class="order_summary_container">
+    <h2><b>Order Summary</b></h2>
+    <hr>
+    <table>
+      <tr>
+        <td>Item :</td>
+        <td><span id="item_price"></span></td>
+      </tr>
+      <tr>
+        <td>Shipping :</td>
+        <td><span id="shipping_price"></span></td>
+      </tr>
+      <tr>
+        <td>Subtotal:</td>
+        <td><span id="subtotal"></span></td>
+      </tr>
+      <tr>
+        <td>GST:</td>
+        <td><span id="gst"></span></td>
+      </tr>
+      <tr>
+        <td>PST:</td>
+        <td><span id="pst"></span></td>
+      </tr>
+      <tr>
+        <td><strong>Total:</strong></td>
+        <td><strong><span id="total_price"></span></strong></td>
+      </tr>
+    </table>
+    <div class="checkout_container">
+      <button class="checkout_btn" onclick="document.location='Checkout.html'">Checkout</button>
+    </div>
+  </div>
+  <script src="Cart.js"></script>
+</body>
+
+</html>

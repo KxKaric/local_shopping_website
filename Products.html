@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+   <link rel="stylesheet" href="css/Products.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+   <title>Products</title>
+   <h1 class="title">Ecommerce</h1>
+</head>
+
+<body>
+   <div class="NavBar">
+      <div class="NavBarItems">
+         <a class="homepage" href="Home.html">Home</a>
+         <a class="Products" href="Products.html">Products</a>
+         <a class="About" href="About.html">About</a>
+      </div>
+
+      <div class="sideicons">
+         <a class="cartImage" href="Cart.html">
+            <i class="fa fa-cart-shopping"></i>
+         </a>
+         <a class="profile" href="profile.html">
+            <i class="fa-solid fa-user"></i>
+         </a>
+         <input type="text" name="searchBar" placeholder="Search..">
+      </div>
+
+
+   </div>
+
+
+
+
+   <div class="sideNav">
+
+      <div class="sidebar">
+         <ul>
+            <li><a href="Shirts.html"><i class="fa fa-shirt"></i> Shirts</a></li>
+            <li><a href="HoodiesAndJackets.html"><i class="fa fa-brands"></i> Hoodies&Jackets</a></li>
+            <li><a href="Footware.html"><i class="fa-solid fa-shoe-prints"></i> Footware</a></li>
+         </ul>
+
+         <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+         </div>
+      </div>
+
+      <div class="main-content">
+
+
+         <div>
+            <h1 class="our_products">Our Products </h1>
+         </div>
+
+         <div class="products">
+            <div class="products_container">
+
+
+               <div class="dropdown-s40">
+                  <a class="s40">
+                     <img id="first-image" src="images/40s.png" style="display:block;">
+                  </a>
+
+                  <!-- <p style="font-size: 20px; color:white">Price CAD$ 49.99</p> -->
+
+                  <div class="s40-drop">
+                     <em style="font-size: 20px; color:black">CAD$ 49.99</em>
+                     <button class="add-button" onclick="addToCart('40s & Shorties Logo Sand T-Shirt', 1, 49.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        From 40s & Shorties,the General Logo t-shirt comes in a <br>
+                        sand colorway. Simple branding which reads: "40s & <br>
+                        Shorties | Bad decisions. Good times. Worldwide" <br>
+                        appears on the chest and back in brown, as the <br>
+                        lightweight cotton t-shirt is finished with a printed <br>
+                        neck label for comfort.</i>
+                  </div>
+               </div>
+
+
+               <div class="dropdown-LZMFG">
+                  <a class="LZMFG">
+                     <img src="images/LZMFG.png">
+                  </a>
+
+                  <!-- <p style="font-size: 20px; color:white">Price CAD$ 39.99</p> -->
+
+
+
+                  <div class="LZMFG-drop">
+                     <em style="font-size: 20px; color:black">CAD$ 39.99</em>
+                     <button class="add-button" onclick="addToCart('LZMFG Midnight Black T-Shirt', 1, 39.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        Made of 100% cotton, the Midnight t-shirt from LZMFG <br>
+                        comes in a black colorway with a screen-printed tire <br>
+                        logo on the left of chest and a back graphic of a <br>
+                        turbo-charged car in a midnight purple colorway.</i>
+                  </div>
+               </div>
+
+
+               <div class="dropdown-santa">
+                  <a class="santa">
+                     <img src="images/Santa.png">
+                  </a>
+
+                  <!-- <p style="font-size: 20px; color:white">Price CAD$ 79.99</p> -->
+
+
+
+                  <div class="santa-drop">
+                     <em style="font-size: 20px; color:black">CAD$ 79.99</em>
+                     <button class="add-button" onclick="addToCart('Santa Cruz Reflection Black T-Shirt', 1, 79.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        Top off your look with signature skate style with the <br>
+                        Santa Cruz Reflection black t-shirt. This relaxed fit <br>
+                        tee features matching screen-printed logo graphics on <br>
+                        the left chest and back of Santa Cruz's signature logo <br>
+                        script in a reflective water composition.</i>
+                  </div>
+               </div>
+
+
+               <div class="dropdown-thrasher">
+                  <a class="thrasher">
+                     <img src="images/Thrasher.png">
+                  </a>
+
+                  <!-- <p style="font-size: 20px; color:white">Price CAD$ 59.99</p> -->
+
+
+
+
+                  <div class="thrasher-drop">
+                     <em style="font-size: 20px; color:black">CAD$ 59.99</em>
+                     <button class="add-button" onclick="addToCart('Thrasher Gonz White T-Shirt', 1, 59.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        Skate in a fun new look from Mark Gonzales with this <br>
+                        Thrasher Gonz t-shirt. Keep things light with the custom<br>
+                        handwritten Thrasher text and guy skateboarding artwork <br>
+                        graphic by Mark Gonzales in a pre-shrunk cotton <br>
+                        constructed white colorway.</i>
+                  </div>
+               </div>
+
+
+               <div class="dropdown-DGK">
+                  <a class="DGK">
+                     <img src="images/DGK.png">
+                  </a>
+
+                  <!-- <p style="font-size: 20px; color:white">Price CAD$ 59.99</p> -->
+
+
+
+                  <div class="DGK-drop">
+                     <em style="font-size: 20px; color:black">CAD$ 59.99</em>
+                     <button class="add-button" onclick="addToCart('DGK Tuner White T-Shirt', 1, 59.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        Add some high-speed style to any wardrobe with the <br>
+                        Tuner white t-shirt from DGK! This white tee sports <br>
+                        a ton of racing-inspired logo graphics across the back,<br>
+                        with a DGK logo at the lower corner, giving a classic, <br>
+                        iconic look to any ensemble.</i>
+                  </div>
+               </div>
+
+               <div class="dropdown-Empyre">
+                  <a class="Empyre">
+                     <img src="images/Empyre.png">
+                  </a>
+
+                  <!-- <p style="font-size: 20px; color:white">Price CAD$ 29.99</p> -->
+
+                  <div class="Empyre-drop">
+                     <em style="font-size: 20px; color:black">CAD$ 29.99</em>
+                     <button class="add-button" onclick="addToCart('Empyre Fresh Hit Black Wash T-Shirt', 1, 29.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        In a black wash colorway comes the Fresh Hit t-shirt <br>
+                        from Empyre, showing the brand name in graffiti-style <br>
+                        artwork in accents of gold and red that draw the eye. <br>
+                        This tee is made from a soft cotton material, giving <br>
+                        comfortable all day wear with a printed neckline.</i>
+                  </div>
+
+               </div>
+
+               <div class="dropdown-women-addidas">
+                  <a class="women-addidas">
+                     <img src="images/women-addidas.png">
+                  </a>
+
+                  <div class="women-addidas-drop">
+                     <em style="font-size: 20px; color: rgb(144, 20, 20)">CAD$ 49.99 </em>
+                     <button class="add-button" onclick="addToCart('women-addidas', 1, 49.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        A track jacket like never before. Sure, this may look <br>
+                        just like iconic adidas gear from the archive, but this<br>
+                        Primeblue SST Track Top symbolizes change. The iconic <br>
+                        silhouette is made with Parley Ocean Plastic that's made <br>
+                        from upcycled plastic waste collected from ocean shores. <br>
+                        It's a statement style that's good for the planet too. <br>
+                        Stand up, stand out and join adidas' commitment to <br>
+                        help end plastic waste.</i>
+                  </div>
+               </div>
+
+
+               <div class="dropdown-champion-hoddie">
+                  <a class="champion-hoddie" >
+                     <img src="images/champion-hoddie.png">
+                  </a>
+
+                  <div class="champion-hoddie-drop">
+                     <em style="font-size: 20px; color: rgb(144, 20, 20)">CAD$ 29.99</em>
+                     <button class="add-button" onclick="addToCart('champion-hoddie', 1, 29.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        This Champion hoodie is made for anyone with <br>
+                        an active lifestyle. It features iconic details <br>
+                        like a front hand pocket, an adjustable hood<br>
+                        with drawstrings, and ribbed cuffs.</i>
+                  </div>
+               </div>
+
+               <div class="dropdown-A-Lab">
+                  <a class="A-Lab" >
+                     <img src="images/A-Lab.png">
+                  </a>
+
+                  <div class="A-Lab-drop">
+                     <em style="font-size: 20px; color: rgb(144, 20, 20)">CAD$ 29.99</em>
+                     <button class="add-button" onclick="addToCart('A-Lab Stay Thirsty White T-Shirt', 1, 29.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        Made of 100% cotton for a soft fit, the Stay Thirsty <br>
+                        t-shirt from A-Lab comes in a whitecolorway with a <br>
+                        screen-printed front graphic of a water jug with a goldfish<br>
+                        inside and script reading, "Stay thirsty."</i>
+
+                  </div>
+               </div>
+
+               <div class="dropdown-fwd-man-tshirt">
+                  <a class="fwd-man-tshirt" href="fwd-man-tshirt.html">
+                     <img src="images/fwd-man-tshirt.png">
+                  </a>
+
+                  <div class="fwd-man-tshirt-drop">
+                     <em style="font-size: 20px; color: rgb(144, 20, 20)">CAD$ 29.99</em>
+                     <button class="add-button" onclick="addToCart('fwd-man-tshirt', 1, 29.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        Legendary heavyweight Reverse Weave fleece is cut <br>
+                        on the cross-grain to resist vertical shrinkage, so <br>
+                        the fit stays true. The soft brushed interior keeps you<br>
+                        comfortable from workout warm-up's to weekends.</i>
+
+                  </div>
+               </div>
+
+
+               <div class="dropdown-addidas-women-shoe">
+                  <a class="addidas-women-shoe">
+                     <img src="images/addidas-women-shoe.png">
+                  </a>
+
+                  <div class="addidas-women-shoe-drop">
+                     <em style="font-size: 20px; color: rgb(144, 20, 20)">CAD$ 29.99</em>
+                     <button class="add-button" onclick="addToCart('addidas-women-shoe', 1, 29.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        Made with a series of recycled materials, this upper <br>
+                        features at least 50% recycled content. This product <br>
+                        represents just one of our solutions to help <br>
+                        end plastic waste.
+                     </i>
+
+                  </div>
+               </div>
+
+               <div class="dropdown-nike-airmax-man">
+                  <a class="nike-airmax-man" >
+                     <img src="images/nike-airmax-man.png">
+                  </a>
+                  <div class="nike-airmax-man-drop">
+                     <em style="font-size: 20px; color: rgb(144, 20, 20)">CAD$ 29.99</em>
+                     <button class="add-button" onclick="addToCart('nike-airmax-man', 1, 29.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        With its easy going lines, heritage track look and of <br>
+                        course, visible Air cushioning, the Nike Air Max SC is <br>
+                        the perfect finish to any outfit. The rich mixture of <br>
+                        materials adds depth while making it a durable and <br>
+                        lightweight shoe for everyday wear.
+                     </i>
+
+                  </div>
+               </div>
+
+               <div class="dropdown-man-jacket">
+                  <a class="man-jacket">
+                     <img src="images/man-jacket.png">
+                  </a>
+
+                  <div class="man-jacket-drop">
+                     <em style="font-size: 20px; color: rgb(144, 20, 20)">CAD$ 89.99</em>
+                     <button class="add-button" onclick="addToCart('man-jacket', 1, 89.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        A water-resistant nylon exterior can weather the elements, <br>
+                        while a sherpa lining gives it a luxurious feel and added <br>
+                        warmth. It will pair well with so many winter essentials <br>
+                        in your closet.
+                     </i>
+
+                  </div>
+               </div>
+
+               <div class="dropdown-Nike">
+                  <a class="Nike" >
+                     <img src="images/Nike.png">
+                  </a>
+
+
+                  <div class="Nike-drop">
+                     <em style="font-size: 20px; color: rgb(144, 20, 20)">CAD$ 29.99</em>
+                     <button class="add-button"
+                        onclick="addToCart('Nike Sportswear 12 Month Futura T-Shirt', 1, 29.99)">
+                        <div class="pre-cart">
+                           <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                     </button>
+                     <i style="font-size: 15px; color:black"><br>
+                        Perfect for bold Nike branding, the 12 Month <br>
+                        Futura t-shirt from Nike Sportswear is made of <br>
+                        100% cotton and comes in a black colorway with a<br>
+                        red and white Swoosh logo screen-printed<br>
+                        across the chest.</i>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <Footer>
+            <div class="footer">
+               <br>
+               <h4>About Us</h4>
+               <p>Group 14: Quinn Loewen, Ovi Podder, Daxuan Chen</p>
+
+               <h4>Contact Us</h4>
+               <p>Address<br>Winnipeg, MB<br>Phone: (204) 123-4567<br>Email:
+                  info@shoppingonline.com</p>
+
+            </div>
+            <hr>
+            <p class="text-center">Copyright &copy; 2023 Shopping Online.
+            </p>
+      </div>
+      </Footer>
+   </div>
+
+
+   </div>
+   </div>
+
+   <script src="products.js"></script>
+
+</body>
+
+</html>

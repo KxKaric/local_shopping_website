@@ -1,0 +1,839 @@
+body {
+   background-color: rgb(197, 195, 195);
+}
+
+.title {
+   color: #bdb8d7;
+   background-color: #4b4276;
+   padding: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+
+.NavBar {
+   font-family: Arial, Helvetica, sans-serif;
+   overflow: hidden;
+   background-color: lightgray;
+}
+
+.NavBar a {
+   display: block;
+   color: black;
+   float: left;
+   padding: 12px 15px;
+   text-decoration: none;
+   font-size: 16px;
+   text-align: center;
+}
+
+.NavBar a:hover {
+   background-color: #dddddd;
+   color: black;
+}
+
+.NavBar a.active {
+   background-color: #dddddd64;
+}
+
+.NavBar input[type=text] {
+   padding: 6px;
+   float: right;
+   margin-top: 5px;
+   margin-right: 10px;
+   font-size: 16px;
+}
+
+.cartImage img {
+   width: 30px;
+   height: 30px;
+   margin-right: 0%;
+
+}
+
+.profile img {
+   width: 30px;
+   height: 30px;
+   margin-right: 100%;
+
+}
+
+.cartImage img:hover {
+   background-color: #dddddd;
+   color: black;
+}
+
+.cartImage img.active {
+   background-color: #dddddd64;
+}
+
+.profile img:hover {
+   background-color: #dddddd;
+   color: black;
+}
+
+.profile img.active {
+   background-color: #dddddd64;
+}
+
+
+
+
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.sideNav {
+   display: flex;
+   position: relative;
+}
+
+.sideNav .sidebar {
+   width: 200px;
+   height: 100%;
+   background-color: #4b4276;
+   padding: 30px 0;
+   position: absolute;
+}
+
+.sideNav .sidebar ul li a {
+   padding: 15px;
+   border-bottom: 1px solid #bdb8d7;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+   border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+
+.sideNav .sidebar ul li a {
+   color: #bdb8d7;
+   display: block;
+}
+
+.sideNav .sidebar ul li:hover {
+   background-color: #594f8d;
+}
+
+.sideNav .sidebar ul li:hover a {
+   color: #fff;
+}
+
+.sideNav .sidebar .socials {
+   position: absolute;
+   bottom: 25%;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+
+}
+
+.sideNav .sidebar .socials a {
+   display: block;
+   width: 25px;
+   height: 25px;
+   background-color: #594f8d;
+   line-height: 50px;
+   text-align: center;
+   margin: 0 5px;
+   color: #bdb8d7;
+
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////// */
+
+.main-content {
+   width: 100%;
+   margin-left: 200px;
+}
+
+
+.bestseller {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #484072;
+}
+
+.bestsell>div {
+   box-sizing: border-box;
+
+}
+
+.horizontal_scroll_bestsell {
+   background-color: #2f2a4a;
+   overflow-y: hidden;
+   overflow-x: scroll;
+   white-space: nowrap;
+   padding-right: 600px;
+   display: flex;
+   align-items: flex-start;
+}
+
+.horizontal_scroll_bestsell>div {
+   display: inline-block;
+   color: white;
+   text-align: center;
+   padding: 50px;
+   text-decoration: none;
+}
+
+/* .horizontal_scroll_bestsell div:hover{
+   background-color: #554c87;
+} */
+
+.horizontal_scroll_bestsell>div>a>img {
+   width: 200px;
+   height: 240px;
+
+}
+
+
+/* ///////////////// s40//////////////////////////////// */
+
+.s40-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.s40-drop p,
+.s40-drop i {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+
+.s40 a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-s40:hover .s40-drop {
+   display: block;
+}
+
+.dropdown-s40:hover .s40 {
+   background-color: #98999c;
+}
+
+
+/* ////////////////LZMFG////////////// */
+
+
+.LZMFG-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.LZMFG-drop p,
+.LZMFG-drop i {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.LZMFG a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-LZMFG:hover .LZMFG-drop {
+   display: block;
+}
+
+.dropdown-LZMFG:hover .LZMFG {
+   background-color: #98999c;
+}
+
+
+/* ////////////////santa////////////// */
+
+.santa-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.santa-drop p,
+.santa-drop i {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.santa a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-santa:hover .santa-drop {
+   display: block;
+}
+
+.dropdown-santa:hover .santa {
+   background-color: #98999c;
+}
+
+
+/* ////////////////thrasher////////////// */
+
+.thrasher-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.thrasher-drop p,
+.thrasher-drop i {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.thrasher a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-thrasher:hover .thrasher-drop {
+   display: block;
+}
+
+.dropdown-thrasher:hover .thrasher {
+   background-color: #98999c;
+}
+
+/* ////////////////japanese////////////// */
+
+
+.DGK-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.DGK-drop p,
+.DGK-drop i {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.DGK a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-DGK:hover .DGK-drop {
+   display: block;
+}
+
+.dropdown-DGK:hover .DGK {
+   background-color: #98999c;
+}
+
+/* ////////////////GM////////////// */
+
+
+.Empyre-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.Empyre-drop p,
+.Empyre-drop i {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+
+}
+
+.Empyre a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-Empyre:hover .Empyre-drop {
+   display: block;
+}
+
+.dropdown-Empyre:hover .Empyre {
+   background-color: #98999c;
+}
+
+
+/* //////////////////////////////////////////////////////////////// */
+
+
+
+.Onsale {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #484072;
+   margin-top: 150px;
+}
+
+.horizontal_scroll_onsale {
+   background-color: #2f2a4a;
+   overflow-y: hidden;
+   overflow-x: scroll;
+   white-space: nowrap;
+   padding-right: 600px;
+   display: flex;
+   align-items: flex-start;
+}
+
+.horizontal_scroll_onsale>div {
+   display: inline-block;
+   color: white;
+   text-align: center;
+   padding: 50px;
+   text-decoration: none;
+}
+
+/* .horizontal_scroll_onsale div:hover{
+   background-color: #554c87;
+} */
+
+.horizontal_scroll_onsale>div>a>img {
+   width: 200px;
+   height: 240px;
+
+}
+
+.add-button {
+   box-sizing: border-box;
+   background-color: #8173cd;
+   border: none;
+   color: white;
+   padding: 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font: 20px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 50%;
+}
+
+.add-button:hover {
+   background-color: #9d99b6;
+   color: #000000;
+}
+
+.add-button.active {
+   background-color: #dddddd64;
+}
+
+/* /////////////////////women-addidas/////// */
+
+.women-addidas-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.women-addidas-drop p {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.women-addidas a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-women-addidas:hover .women-addidas-drop {
+   display: block;
+}
+
+.dropdown-women-addidas:hover .women-addidas {
+   background-color: #98999c;
+}
+
+
+
+/* //////////////////////champinhoddie//////////////// */
+
+
+.champion-hoddie-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.champion-hoddie-drop p {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.champion-hoddie a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-champion-hoddie:hover .champion-hoddie-drop {
+   display: block;
+}
+
+.dropdown-champion-hoddie:hover .champion-hoddie {
+   background-color: #98999c;
+}
+
+/* //////////////////////A-Lab//////////////// */
+
+.A-Lab-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.A-Lab-drop p {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.A-Lab a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-A-Lab:hover .A-Lab-drop {
+   display: block;
+}
+
+.dropdown-A-Lab:hover .A-Lab {
+   background-color: #98999c;
+}
+
+
+/* ///////////////////////fwd-man-tshirt////////////////////////////////
+ */
+
+
+.fwd-man-tshirt-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.fwd-man-tshirt-drop p {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.fwd-man-tshirt a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-fwd-man-tshirt:hover .fwd-man-tshirt-drop {
+   display: block;
+}
+
+.dropdown-fwd-man-tshirt:hover .fwd-man-tshirt {
+   background-color: #98999c;
+}
+
+
+/* ///////////////////addidas-women-shoe//////////////////////////////// */
+
+.addidas-women-shoe-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.addidas-women-shoe-drop p {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.addidas-women-shoe a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-addidas-women-shoe:hover .addidas-women-shoe-drop {
+   display: block;
+}
+
+.dropdown-addidas-women-shoe:hover .addidas-women-shoe {
+   background-color: #98999c;
+}
+
+/* ///////////////nike-airmax-man//////// */
+
+.nike-airmax-man-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nike-airmax-man-drop p {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.nike-airmax-man a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-nike-airmax-man:hover .nike-airmax-man-drop {
+   display: block;
+}
+
+.dropdown-nike-airmax-man:hover .nike-airmax-man {
+   background-color: #98999c;
+}
+
+
+/* ////////////////man-jacket///////////////// */
+
+.man-jacket-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.man-jacket-drop p {
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.man-jacket a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-man-jacket:hover .man-jacket-drop {
+   display: block;
+}
+
+.dropdown-man-jacket:hover .man-jacket {
+   background-color: #98999c;
+}
+
+
+/* ////////////////Nike///////////////// */
+
+.Nike-drop {
+   overflow: auto;
+   float: left;
+   display: none;
+   position: sticky;
+   background-color: #ddddddd3;
+   max-width: 400px;
+   min-height: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.Nike-drop p{
+   max-width: fit-content;
+   word-wrap: break-word;
+   color: black;
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+}
+
+.Nike a:hover {
+   background-color: #ddd;
+}
+
+.dropdown-Nike:hover .Nike-drop {
+   display: block;
+}
+
+.dropdown-Nike:hover .Nike {
+   background-color: #98999c;
+}
+
+
+/* ////////////////////////////////////////////////////////////////
+PRODUCT */
+
+@media screen and (max-width: 800px) {
+
+   .sideNav,
+   .main-content {
+      width: 100%;
+      /* The width is 100%, when the viewport is 800px or smaller */
+      height: auto;
+   }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="css/Checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <div class="NavBar">
+        <div class="NavBarItems">
+            <a class="homepage" href="Home.html">Home</a>
+            <a class="Products" href="Products.html">Products</a>
+            <a class="About" href="About.html">About</a>
+        </div>
+  
+        <div class="sideicons">
+           <a class="cartImage" href="Cart.html">
+              <i class="fa fa-cart-shopping"></i>
+           </a>
+           <a class="profile" href="profile.html">
+              <i class="fa-solid fa-user"></i>
+           </a>
+           <input type="text" name="searchBar" placeholder="Search..">
+        </div>
+  
+  
+     </div>
+
+    <div class="checkout_container">
+        <div class="address_container">
+            <h2>Address</h2>
+            <form>
+                <label for="street_address">Street Address:</label>
+                <input type="text" id="street_address" name="street_address"><br><br>
+                <label for="suit">Suit:</label>
+                <input type="text" id="suit" name="suit"><br><br>
+                <label for="postal_code">Postal Code:</label>
+                <input type="text" id="postal_code" name="postal_code"><br><br>
+                <label for="country">Country:</label>
+                <input type="text" onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" id="country"
+                    name="country"><br><br>
+                <label for="province">Province:</label>
+                <input type="text" onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" id="province"
+                    name="province"><br><br>
+                <label for="city">City:</label>
+                <input type="text" onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" id="city" name="city"><br><br>
+            </form>
+        </div>
+        <div class="payment_container">
+            <h2>Payment</h2>
+            <form>
+                <label for="cardnumber">Card Number:</label>
+                <input type="text" maxlength="16" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                    id="cardnumber" name="cardnumber"><br><br>
+                <label for="name_on_the_card">Name on the card:</label>
+                <input type="text" id="name_on_the_card" name="name_on_the_card"><br><br>
+                <label for="expirydate">Expiry Date:</label>
+                <input type="text" maxlength="5" onkeypress="return event.charCode >= 47 && event.charCode <= 57"
+                    id="expirydate" name="expirydate"><br><br>
+                <label for="cvv">CVV:</label>
+                <input type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                    id="cvv" name="cvv"><br><br>
+            </form>
+            <div class="total_container">
+                <h3>Total Price : <span id="total"></span>(including tax&shipping)</h3>
+            </div>
+            <div class="alert">
+                <p><span id="error" style="color: red;"></span></p>
+            </div>
+            <div class="paynow_container">
+                <button class="paynow_button">Pay Now</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // get the total price from Cart.html 
+        const price = localStorage.getItem('totalPrice');
+
+        // store the name for the next page
+        const nameOntheCardInput = document.getElementById('name_on_the_card');
+        nameOntheCardInput.addEventListener('input', function () {
+            localStorage.setItem('nameOntheCard', nameOntheCardInput.value);
+        });
+
+        // display the total price
+        const totalElement = document.getElementById('total');
+        totalElement.textContent = `$${price}`;
+
+
+
+        // error checking for payment_container , address_container
+        const paynowButton = document.querySelector('.paynow_button');
+        paynowButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            const streetInput = document.getElementById('street_address');
+            const suitInput = document.getElementById('suit');
+            const pcInput = document.getElementById('postal_code');
+            const countryInput = document.getElementById('country');
+            const provinceInput = document.getElementById('province');
+            const cityInput = document.getElementById('city');
+            const cardNumberInput = document.getElementById('cardnumber');
+            const nameInput = document.getElementById('name_on_the_card');
+            const expiryDateInput = document.getElementById('expirydate');
+            const cvvInput = document.getElementById('cvv');
+
+            const errorMsg = document.getElementById('error');
+
+            if (cardNumberInput.value.length !== 16) {
+                errorMsg.textContent = '*Please enter a valid 16-digit card number.*';
+            } else if (!nameInput.value) {
+                errorMsg.textContent = '*Please enter the name on the credit card.*';
+            } else if (!expiryDateInput.value.match(/^(0[1-9]|1[0-2])\/\d{2}$/)) {
+                errorMsg.textContent = '*Please enter a valid expiry date in the format MM/YY.*';
+            }
+
+            else if (cvvInput.value.length !== 3) {
+                errorMsg.textContent = '*Please enter a valid 3-digit CVV.*';
+            } else if (!streetInput.value || !suitInput.value || !pcInput.value || !countryInput || !provinceInput.value || !cityInput.value) {
+                errorMsg.textContent = '*Please fill out all address information.*';
+            } else {
+                document.location = 'End.html';
+            }
+        });
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+   <link rel="stylesheet" href="css/End.css">
+   <title>Thank you for shopping!</title>
+</head>
+
+<body>
+   <h1>Checkout</h1>
+   <h2>Dear <span id="nameOntheCard"></span>, thank you for your purchase!</h2>
+   <!-- <img src="images/checkMark.png" alt="Shopping completed" width="100" height="100"> -->
+   <script>
+      // get the name from Checkout.html 
+      const nameOntheCard = localStorage.getItem('nameOntheCard');
+
+      // display the name
+      const nameElement = document.getElementById('nameOntheCard');
+      nameElement.textContent = `${nameOntheCard}`;
+   </script>
+</body>
+
+</html>
